@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kerolos Karam — Finance, Financial Modeling, Valuation, FP&A and Investment Research.">
+  <title>Kerolos Karam | Finance & Valuation</title>
+  <style>
+    :root {
+      --bg: #080f1d;
+      --panel: #101b2d;
+      --gold: #d6b46a;
+      --text: #f4f1e9;
+      --muted: #a5afbd;
+      --line: #263449;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1080px, 90%); margin: auto; }
+    header {
+      border-bottom: 1px solid var(--line);
+      position: sticky; top: 0;
+      background: rgba(8,15,29,.95);
+      z-index: 10;
+    }
+    nav {
+      min-height: 76px; display: flex;
+      align-items: center; justify-content: space-between;
+      gap: 20px;
+    }
+    .logo { font-size: 21px; font-weight: bold; }
+    .logo span, .gold { color: var(--gold); }
+    .navlinks { display: flex; gap: 22px; font-size: 13px; color: var(--muted); }
+    .navlinks a:hover { color: var(--gold); }
+    .hero { padding: 115px 0 105px; }
+    .eyebrow {
+      color: var(--gold); letter-spacing: 3px;
+      text-transform: uppercase; font-size: 12px;
+    }
+    h1 { font-size: clamp(42px, 8vw, 76px); line-height: 1.12; margin: 20px 0; }
+    .hero h2 { font-size: clamp(19px, 3vw, 26px); color: var(--gold); font-weight: 400; }
+    .intro { color: var(--muted); max-width: 650px; margin: 22px 0 30px; }
+    .button {
+      display: inline-block; padding: 12px 22px;
+      border: 1px solid var(--gold); color: var(--gold);
+      border-radius: 4px; margin: 5px 8px 5px 0;
+    }
+    .button.primary { background: var(--gold); color: #101827; }
+    section { padding: 75px 0; border-top: 1px solid var(--line); }
+    .section-label { color: var(--gold); font-size: 12px; letter-spacing: 2px; }
+    h3 { font-size: 30px; margin: 8px 0 25px; }
+    .about { color: var(--muted); max-width: 800px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 8px; padding: 24px;
+    }
+    .card h4 { color: var(--gold); margin-bottom: 10px; font-size: 18px; }
+    .card p, .card li { color: var(--muted); font-size: 14px; }
+    .card ul { padding-left: 18px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 12px; }
+    .skill {
+      border: 1px solid var(--line); background: var(--panel);
+      padding: 10px 15px; border-radius: 5px; color: var(--muted);
+      font-size: 14px;
+    }
+    footer { padding: 30px 0; color: var(--muted); font-size: 13px; text-align: center; }
+    @media(max-width:700px) {
+      .navlinks { gap: 10px; font-size: 11px; flex-wrap: wrap; justify-content: flex-end; }
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding: 80px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="#">KER<span>OLOS</span>.</a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container hero">
+      <p class="eyebrow">Finance · Modeling · Analytics</p>
+      <h1>Kerolos<br><span class="gold">Karam.</span></h1>
+      <h2>Financial Modeling &amp; Valuation</h2>
+      <p class="intro">
+        Focused on financial analysis, business valuation, financial planning
+        and analysis, investment research, and data analytics.
+      </p>
+      <a class="button primary" href="#projects">Explore My Work</a>
+      <a class="button" href="#contact">Get In Touch</a>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <p class="section-label">01 / ABOUT</p>
+        <h3>Professional Profile</h3>
+        <p class="about">
+          I am passionate about connecting finance and data to support
+          informed business and investment decisions. My interests include
+          financial modeling, valuation, forecasting, investment research,
+          and business intelligence.
+        </p>
+      </div>
+    </section>
+
+    <section id="expertise">
+      <div class="container">
+        <p class="section-label">02 / EXPERTISE</p>
+        <h3>Certifications &amp; Skills</h3>
+        <div class="grid">
+          <div class="card">
+            <h4>Certifications</h4>
+            <ul>
+              <li>FMVA®</li>
+              <li>FP&amp;A</li>
+              <li>BIDA</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Financial Skills</h4>
+            <ul>
+              <li>Financial Modeling</li>
+              <li>Business Valuation</li>
+              <li>Financial Statement Analysis</li>
+              <li>Budgeting &amp; Forecasting</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Data &amp; Analytics</h4>
+            <ul>
+              <li>Microsoft Excel</li>
+              <li>Power BI</li>
+              <li>Data Analysis</li>
+              <li>Business Intelligence</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <p class="section-label">03 / PORTFOLIO</p>
+        <h3>Selected Projects</h3>
+        <div class="grid">
+          <div class="card">
+            <h4>Apple Inc. – DCF Valuation</h4>
+            <p>Financial forecasting and discounted cash flow valuation.</p>
+            <p style="margin-top:14px">Project files coming soon.</p>
+          </div>
+          <div class="card">
+            <h4>Coca-Cola – 3-Statement Model</h4>
+            <p>Integrated financial statements and forecasting model.</p>
+            <p style="margin-top:14px">Project files coming soon.</p>
+          </div>
+          <div class="card">
+            <h4>Power BI Dashboards</h4>
+            <p>Interactive reporting and data analytics projects.</p>
+            <p style="margin-top:14px">Project files coming soon.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <p class="section-label">04 / CONTACT</p>
+        <h3>Let's Connect</h3>
+        <p class="about">For professional opportunities and collaboration.</p>
+        <p style="margin-top:20px">
+          <a class="button primary" href="https://www.linkedin.com/in/kerolos-karam-fmva%C2%AE-fpap%C2%AE-2b52092a1/" target="_blank" rel="noopener">LinkedIn Profile</a>
+          <a class="button" href="https://github.com/KerolosKaram-FA" target="_blank" rel="noopener">GitHub Profile</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Kerolos Karam. All rights reserved.</div>
+  </footer>
+</body>
+</html>
