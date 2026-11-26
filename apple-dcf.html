@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apple Inc. DCF Valuation | Kerolos Karam</title>
+<meta name="description" content="Integrated 3-statement model and DCF valuation of Apple Inc. with perpetuity and exit multiple methods, scenarios and sensitivity tables. By Kerolos Karam.">
+<link rel="canonical" href="https://kerolloskaram-fa.github.io/apple-dcf.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23080f1d'/><text x='50' y='66' font-size='52' font-family='Georgia' font-weight='bold' fill='%23d6b46a' text-anchor='middle'>KK</text></svg>">
+<style>
+:root{--bg:#080f1d;--panel:#101b2d;--gold:#d6b46a;--text:#f4f1e9;--muted:#a5afbd;--line:#263449}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.7}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.container{width:min(960px,90%);margin:auto}
+header{border-bottom:1px solid var(--line);background:rgba(8,15,29,.95)}
+nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font:700 21px Georgia,serif}.logo span,.gold{color:var(--gold)}
+.back{color:var(--muted);font-size:14px}.back:hover{color:var(--gold)}
+.hero{padding:64px 0 40px}
+.eyebrow{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:12px}
+h1{font:700 clamp(32px,6vw,52px)/1.15 Georgia,serif;margin:14px 0 16px}
+.intro{color:var(--muted);max-width:680px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.tags span{border:1px solid var(--line);background:var(--panel);padding:4px 12px;border-radius:999px;font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px}
+.stat b{display:block;font:700 34px Georgia,serif;color:var(--gold)}
+.stat span{color:var(--muted);font-size:14px}
+section{padding:52px 0;border-top:1px solid var(--line)}
+.label{color:var(--gold);font-size:12px;letter-spacing:2px}
+h2{font:700 28px Georgia,serif;margin:6px 0 20px}
+p.t{color:var(--muted);max-width:760px;margin-bottom:14px}
+.scroll{overflow-x:auto;margin:0 0 26px;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:520px;background:var(--panel);font-size:15px}
+caption{caption-side:top;text-align:left;padding:12px 16px;color:var(--gold);font-size:14px;border-bottom:1px solid var(--line)}
+th,td{padding:10px 14px;text-align:right;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+thead th{color:var(--muted);font-weight:500}
+tbody th{color:var(--muted);font-weight:500}
+tr:last-child td,tr:last-child th{border-bottom:0}
+td.base{background:rgba(214,180,106,.16);color:var(--gold);font-weight:700}
+ul.l{padding-left:20px;color:var(--muted);max-width:760px}ul.l li{margin-bottom:8px}ul.l b{color:var(--text)}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.button{display:inline-block;padding:11px 20px;border:1px solid var(--gold);color:var(--gold);border-radius:4px;font-weight:500}
+.button:hover{background:rgba(214,180,106,.12)}
+.button.primary{background:var(--gold);color:#101827}
+.note{color:var(--muted);font-size:13px;margin-top:18px;max-width:760px}
+footer{padding:28px 0;color:var(--muted);font-size:13px;text-align:center;border-top:1px solid var(--line)}
+@media(max-width:700px){.stats{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><nav class="container">
+  <a class="logo" href="index.html">KER<span>OLOS</span>.</a>
+  <a class="back" href="index.html#projects">&larr; Back to portfolio</a>
+</nav></header>
+
+<main>
+<div class="container hero">
+  <p class="eyebrow">Project · Equity Valuation</p>
+  <h1>Apple Inc. <span class="gold">DCF Valuation</span></h1>
+  <p class="intro">An integrated financial model of Apple (AAPL) that links the income statement, cash flow statement and balance sheet, and values the company with two terminal value methods: perpetuity growth and exit multiple. It includes Best / Base / Worst scenarios and WACC sensitivity tables.</p>
+  <div class="tags"><span>Excel</span><span>Financial modeling</span><span>DCF</span><span>Sensitivity analysis</span><span>Scenario analysis</span></div>
+  <div class="stats">
+    <div class="stat"><b>$192.90</b><span>Base case per share, perpetuity method</span></div>
+    <div class="stat"><b>$291.35</b><span>Base case per share, exit multiple method</span></div>
+    <div class="stat"><b>9.4%</b><span>WACC, with 2.5% terminal growth</span></div>
+  </div>
+</div>
+
+<section><div class="container">
+  <p class="label">RESULTS</p><h2>Valuation summary</h2>
+  <div class="scroll"><table>
+    <caption>Base case</caption>
+    <thead><tr><th>Method</th><th>Enterprise value</th><th>Equity value</th><th>Per share</th><th>vs. $340</th></tr></thead>
+    <tbody>
+      <tr><th>Perpetuity growth (g = 2.5%)</th><td>$2,882 bn</td><td>$2,916 bn</td><td class="base">$192.90</td><td>(43.3%)</td></tr>
+      <tr><th>Exit multiple (20.0x EBITDA)</th><td>$4,370 bn</td><td>$4,404 bn</td><td class="base">$291.35</td><td>(14.3%)</td></tr>
+    </tbody></table></div>
+  <div class="scroll"><table>
+    <caption>Scenarios: value per share</caption>
+    <thead><tr><th>Scenario</th><th>Perpetuity</th><th>Multiple</th></tr></thead>
+    <tbody>
+      <tr><th>Best case</th><td>$242.53</td><td>$366.81</td></tr>
+      <tr><th>Base case</th><td>$192.90</td><td>$291.35</td></tr>
+      <tr><th>Worst case</th><td>$146.15</td><td>$220.59</td></tr>
+    </tbody></table></div>
+  <p class="t"><b class="gold">Takeaway:</b> under these assumptions the model values Apple below the $340 reference price. Across the full sensitivity grids the perpetuity method ranges from $136.73 to $335.26 per share and the multiple method from $255.14 to $333.09, so no cell reaches $340. Only the best-case scenario under the multiple method ($366.81) is above it. The terminal value makes up 79% of enterprise value in the perpetuity method and 83% in the multiple method, so the result is highly sensitive to the discount rate and terminal assumptions.</p>
+</div></section>
+
+<section><div class="container">
+  <p class="label">SENSITIVITY</p><h2>WACC and terminal assumptions</h2>
+  <div class="scroll"><table><caption>Perpetuity method: equity value per share (WACC vs. terminal growth)</caption><thead><tr><th>WACC</th><th>1.5%</th><th>2.0%</th><th>2.5%</th><th>3.0%</th><th>3.5%</th></tr></thead><tbody><tr><th>7.4%</th><td>$232.57</td><td>$251.11</td><td>$273.44</td><td>$300.83</td><td>$335.26</td></tr><tr><th>8.4%</th><td>$198.13</td><td>$211.12</td><td>$226.32</td><td>$244.33</td><td>$266.01</td></tr><tr><th>9.4%</th><td>$172.44</td><td>$181.98</td><td class="base">$192.90</td><td>$205.53</td><td>$220.29</td></tr><tr><th>10.4%</th><td>$152.56</td><td>$159.81</td><td>$167.98</td><td>$177.25</td><td>$187.86</td></tr><tr><th>11.4%</th><td>$136.73</td><td>$142.39</td><td>$148.69</td><td>$155.74</td><td>$163.67</td></tr></tbody></table></div>
+  <div class="scroll"><table><caption>Exit multiple method: equity value per share (WACC vs. terminal EBITDA multiple)</caption><thead><tr><th>WACC</th><th>19.0x</th><th>19.5x</th><th>20.0x</th><th>20.5x</th><th>21.0x</th></tr></thead><tbody><tr><th>7.4%</th><td>$306.62</td><td>$313.24</td><td>$319.85</td><td>$326.47</td><td>$333.09</td></tr><tr><th>8.4%</th><td>$292.61</td><td>$298.90</td><td>$305.18</td><td>$311.47</td><td>$317.76</td></tr><tr><th>9.4%</th><td>$279.39</td><td>$285.37</td><td class="base">$291.35</td><td>$297.32</td><td>$303.30</td></tr><tr><th>10.4%</th><td>$266.92</td><td>$272.60</td><td>$278.29</td><td>$283.97</td><td>$289.66</td></tr><tr><th>11.4%</th><td>$255.14</td><td>$260.55</td><td>$265.96</td><td>$271.37</td><td>$276.78</td></tr></tbody></table></div>
+</div></section>
+
+<section><div class="container">
+  <p class="label">ASSUMPTIONS</p><h2>Key assumptions</h2>
+  <ul class="l">
+    <li><b>Forecast:</b> 2026F to 2030F, valuation date 30 June 2026 with a partial-period adjustment for the first year.</li>
+    <li><b>Revenue:</b> grows from $416.2 bn (2025A) to $714.6 bn (2030F), about 11% a year, driven mainly by Services ($109.2 bn to $283.1 bn).</li>
+    <li><b>Margins:</b> operating margin rises from 32.0% (2025A) to 37.0% (2030F).</li>
+    <li><b>Terminal year:</b> a steady state where every segment grows at the terminal growth rate and margins stay at 2030F levels.</li>
+    <li><b>Working capital:</b> receivable days 29, inventory days 9, payable days 100.</li>
+    <li><b>Capital:</b> net cash of $33.8 bn added to enterprise value; 15,116 million diluted shares.</li>
+    <li><b>Reference price:</b> $340.00.</li>
+  </ul>
+</div></section>
+
+<section><div class="container">
+  <p class="label">MODEL</p><h2>Structure</h2>
+  <ul class="l">
+    <li>Income statement by product line, with a Services build</li>
+    <li>Cash flow statement and balance sheet (balance check = 0 in every period)</li>
+    <li>Working capital, depreciation and PP&amp;E schedules</li>
+    <li>Unlevered free cash flow</li>
+    <li>DCF with perpetuity and exit multiple methods</li>
+    <li>Dashboards with a scenario switch and sensitivity tables</li>
+  </ul>
+</div></section>
+
+<section><div class="container">
+  <p class="label">DOWNLOADS</p><h2>Model and files</h2>
+  <div class="btns">
+    <a class="button primary" href="https://github.com/KerolosKaram-FA/apple-dcf-valuation2/blob/main/DCF_Apple_3.xlsx" target="_blank" rel="noopener">Excel model</a>
+    <a class="button" href="https://github.com/KerolosKaram-FA/apple-dcf-valuation2/blob/main/DCF_Apple_s.pdf" target="_blank" rel="noopener">Model statements (PDF)</a>
+    <a class="button" href="https://github.com/KerolosKaram-FA/apple-dcf-valuation2/blob/main/DCF_Apple_v.pdf" target="_blank" rel="noopener">Dashboards (PDF)</a>
+    <a class="button" href="https://github.com/KerolosKaram-FA/apple-dcf-valuation2" target="_blank" rel="noopener">GitHub repository</a>
+  </div>
+  <p class="note">Educational project, not investment advice. Historical figures (2023 to 2025) come from Apple Inc.'s annual reports (Form 10-K). Forecasts and valuation assumptions are my own.</p>
+</div></section>
+</main>
+
+<footer><div class="container">&copy; 2026 Kerolos Karam. All rights reserved.</div></footer>
+</body>
+</html>
