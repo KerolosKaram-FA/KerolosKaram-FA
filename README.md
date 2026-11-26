@@ -10,7 +10,7 @@ I specialize in financial analysis, financial modeling, business valuation, fina
 ## Certifications
 
 - FMVA® – Financial Modeling & Valuation Analyst
-- FP&A® – Financial Planning & Analysis
+- FPAP® – Financial Planning & Analysis Professional (FPAP")
 - BIDA® – Business Intelligence & Data Analyst
 
 ## Core Areas
