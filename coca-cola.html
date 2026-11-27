@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coca-Cola 3-Statement Model | Kerolos Karam</title>
+<meta name="description" content="Integrated 3-statement financial model of The Coca-Cola Company with Best, Base and Worst scenarios, working capital, PP&amp;E, debt and equity schedules. By Kerolos Karam.">
+<link rel="canonical" href="https://kerolloskaram-fa.github.io/coca-cola.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23080f1d'/><text x='50' y='66' font-size='52' font-family='Georgia' font-weight='bold' fill='%23d6b46a' text-anchor='middle'>KK</text></svg>">
+<style>
+:root{--bg:#080f1d;--panel:#101b2d;--gold:#d6b46a;--text:#f4f1e9;--muted:#a5afbd;--line:#263449}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.7}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.container{width:min(960px,90%);margin:auto}
+header{border-bottom:1px solid var(--line);background:rgba(8,15,29,.95)}
+nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font:700 21px Georgia,serif}.logo span,.gold{color:var(--gold)}
+.back{color:var(--muted);font-size:14px}.back:hover{color:var(--gold)}
+.hero{padding:64px 0 40px}
+.eyebrow{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:12px}
+h1{font:700 clamp(32px,6vw,52px)/1.15 Georgia,serif;margin:14px 0 16px}
+.intro{color:var(--muted);max-width:680px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.tags span{border:1px solid var(--line);background:var(--panel);padding:4px 12px;border-radius:999px;font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px}
+.stat b{display:block;font:700 34px Georgia,serif;color:var(--gold)}
+.stat span{color:var(--muted);font-size:14px}
+section{padding:52px 0;border-top:1px solid var(--line)}
+.label{color:var(--gold);font-size:12px;letter-spacing:2px}
+h2{font:700 28px Georgia,serif;margin:6px 0 20px}
+p.t{color:var(--muted);max-width:760px;margin-bottom:14px}
+.scroll{overflow-x:auto;margin:0 0 26px;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:520px;background:var(--panel);font-size:15px}
+caption{caption-side:top;text-align:left;padding:12px 16px;color:var(--gold);font-size:14px;border-bottom:1px solid var(--line)}
+th,td{padding:10px 14px;text-align:right;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+thead th{color:var(--muted);font-weight:500}
+tbody th{color:var(--muted);font-weight:500}
+tr:last-child td,tr:last-child th{border-bottom:0}
+td.base{background:rgba(214,180,106,.16);color:var(--gold);font-weight:700}
+ul.l{padding-left:20px;color:var(--muted);max-width:760px}ul.l li{margin-bottom:8px}ul.l b{color:var(--text)}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.button{display:inline-block;padding:11px 20px;border:1px solid var(--gold);color:var(--gold);border-radius:4px;font-weight:500}
+.button:hover{background:rgba(214,180,106,.12)}
+.button.primary{background:var(--gold);color:#101827}
+.note{color:var(--muted);font-size:13px;margin-top:18px;max-width:760px}
+footer{padding:28px 0;color:var(--muted);font-size:13px;text-align:center;border-top:1px solid var(--line)}
+@media(max-width:700px){.stats{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><nav class="container">
+  <a class="logo" href="index.html">KER<span>OLOS</span>.</a>
+  <a class="back" href="index.html#projects">&larr; Back to portfolio</a>
+</nav></header>
+
+<main>
+<div class="container hero">
+  <p class="eyebrow">Project · Financial Statement Modeling</p>
+  <h1>Coca-Cola <span class="gold">3-Statement Model</span></h1>
+  <p class="intro">An integrated income statement, cash flow statement and balance sheet forecast for The Coca-Cola Company (KO), with supporting working capital, PP&amp;E, debt and equity schedules. A driver switch runs Best, Base and Worst cases, and the balance sheet balances in every period.</p>
+  <div class="tags"><span>Excel</span><span>3-statement modeling</span><span>Forecasting</span><span>Scenario analysis</span></div>
+  <div class="stats">
+    <div class="stat"><b>$60.3 bn</b><span>2030F revenue, base case</span></div>
+    <div class="stat"><b>$16.3 bn</b><span>2030F net income, base case</span></div>
+    <div class="stat"><b>4.7%</b><span>Revenue growth per year, 2025A to 2030F</span></div>
+  </div>
+</div>
+
+<section><div class="container">
+  <p class="label">FORECAST</p><h2>Base case summary</h2>
+  <div class="scroll"><table><caption>Base case summary (USD millions)</caption><thead><tr><th></th><th>2023A</th><th>2024A</th><th>2025A</th><th>2026F</th><th>2027F</th><th>2028F</th><th>2029F</th><th>2030F</th></tr></thead><tbody>
+<tr><th>Revenue</th><td>45,754</td><td>47,061</td><td>47,941</td><td>50,338</td><td>52,855</td><td>55,233</td><td>57,719</td><td>60,316</td></tr><tr><th>EBITDA</th><td>14,080</td><td>14,161</td><td>17,048</td><td>17,987</td><td>18,930</td><td>19,822</td><td>20,754</td><td>21,728</td></tr><tr><th>EBITDA margin</th><td>30.8%</td><td>30.1%</td><td>35.6%</td><td>35.7%</td><td>35.8%</td><td>35.9%</td><td>36.0%</td><td>36.0%</td></tr><tr><th>Net income</th><td>10,703</td><td>10,649</td><td>13,137</td><td>13,475</td><td>14,184</td><td>14,854</td><td>15,555</td><td>16,286</td></tr><tr><th>Net income margin</th><td>23.4%</td><td>22.6%</td><td>27.4%</td><td>26.8%</td><td>26.8%</td><td>26.9%</td><td>26.9%</td><td>27.0%</td></tr><tr><th>Operating cash flow</th><td>11,599</td><td>6,805</td><td>7,408</td><td>11,077</td><td>15,268</td><td>16,001</td><td>16,753</td><td>17,539</td></tr><tr><th>Investing cash flow</th><td>-3,349</td><td>2,524</td><td>-67</td><td>-2,154</td><td>-2,262</td><td>-2,364</td><td>-2,470</td><td>-2,581</td></tr><tr><th>Financing cash flow</th><td>-8,310</td><td>-6,910</td><td>-8,140</td><td>-9,864</td><td>-10,384</td><td>-10,874</td><td>-11,387</td><td>-11,923</td></tr><tr><th>Change in cash</th><td>-60</td><td>2,419</td><td>-799</td><td>-941</td><td>2,622</td><td>2,763</td><td>2,896</td><td>3,034</td></tr>
+</tbody></table></div>
+  <div class="scroll"><table><caption>Scenarios: 2030F (USD millions)</caption><thead><tr><th>Scenario</th><th>Revenue</th><th>EBITDA</th><th>Net income</th></tr></thead><tbody><tr><th>Best case</th><td>$65,064</td><td>$23,508</td><td>$17,624</td></tr><tr><th>Base case</th><td>$60,316</td><td>$21,728</td><td>$16,286</td></tr><tr><th>Worst case</th><td>$52,931</td><td>$18,959</td><td>$14,205</td></tr></tbody></table></div>
+  <p class="t"><b class="gold">Takeaway:</b> in the base case revenue grows about 4.7% a year and the EBITDA margin stays near 36%, so net income rises from $13.1 bn (2025A) to $16.3 bn (2030F). The gap between the best and worst cases in 2030F is about $3.4 bn of net income. Operating cash flow is lower in 2026F because the model assumes payables fall back to 105 days.</p>
+</div></section>
+
+<section><div class="container">
+  <p class="label">ASSUMPTIONS</p><h2>Key assumptions (base case)</h2>
+  <ul class="l">
+    <li><b>Sales volume growth:</b> 3.0%, 3.0%, 2.5%, 2.5%, 2.5% (2026F to 2030F).</li>
+    <li><b>Pricing increases:</b> 2.0%, 2.0%, 2.0%, 2.0%, 2.0% (2026F to 2030F).</li>
+    <li><b>Working capital:</b> receivable days 25.5, inventory days 91, payable days 105.</li>
+    <li><b>Capex and depreciation:</b> 4.28% and 2.31% of revenue, with a PP&amp;E roll-forward.</li>
+    <li><b>Debt:</b> held flat with a 3.68% effective interest rate.</li>
+    <li><b>Dividends:</b> paid at the historical average payout ratio (73.2%).</li>
+    <li><b>Tax rate:</b> 19.9%.</li>
+  </ul>
+</div></section>
+
+<section><div class="container">
+  <p class="label">MODEL</p><h2>Structure</h2>
+  <ul class="l">
+    <li>Income statement, cash flow statement and balance sheet (check = 0 in every period)</li>
+    <li>Working capital schedule (receivables, inventory, payables)</li>
+    <li>PP&amp;E and depreciation schedule</li>
+    <li>Debt schedule and equity / dividends schedule</li>
+    <li>Output dashboard with charts and a Best / Base / Worst driver switch</li>
+  </ul>
+</div></section>
+
+<section><div class="container">
+  <p class="label">DOWNLOADS</p><h2>Model and files</h2>
+  <div class="btns">
+    <a class="button primary" href="Coca-Cola_3-Statement_Model.xlsx" download>Download Excel model</a>
+    <a class="button" href="Coca-Cola_3-Statement_Model.pdf" target="_blank" rel="noopener">Model statements (PDF)</a>
+    <a class="button" href="https://github.com/KerolosKaram-FA/coca-cola-3-statement-model" target="_blank" rel="noopener">GitHub repository</a>
+  </div>
+  <p class="note">Educational project, not investment advice. Historical figures (2023 to 2025) come from The Coca-Cola Company's annual reports (Form 10-K). Forecasts and assumptions are my own.</p>
+</div></section>
+</main>
+
+<footer><div class="container">&copy; 2026 Kerolos Karam. All rights reserved.</div></footer>
+</body>
+</html>
