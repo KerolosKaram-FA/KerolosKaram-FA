@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power BI Dashboards | Kerolos Karam</title>
+<meta name="description" content="Power BI dashboards by Kerolos Karam: Samsung global sales performance and Vodafone customer and revenue insights.">
+<link rel="canonical" href="https://kerolloskaram-fa.github.io/dashboards.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23080f1d'/><text x='50' y='66' font-size='52' font-family='Georgia' font-weight='bold' fill='%23d6b46a' text-anchor='middle'>KK</text></svg>">
+<style>
+:root{--bg:#080f1d;--panel:#101b2d;--gold:#d6b46a;--text:#f4f1e9;--muted:#a5afbd;--line:#263449}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.7}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.container{width:min(960px,90%);margin:auto}
+header{border-bottom:1px solid var(--line);background:rgba(8,15,29,.95)}
+nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font:700 21px Georgia,serif}.logo span,.gold{color:var(--gold)}
+.back{color:var(--muted);font-size:14px}.back:hover{color:var(--gold)}
+.hero{padding:64px 0 40px}
+.eyebrow{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:12px}
+h1{font:700 clamp(32px,6vw,52px)/1.15 Georgia,serif;margin:14px 0 16px}
+.intro{color:var(--muted);max-width:680px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.tags span{border:1px solid var(--line);background:var(--panel);padding:4px 12px;border-radius:999px;font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px}
+.stat b{display:block;font:700 34px Georgia,serif;color:var(--gold)}
+.stat span{color:var(--muted);font-size:14px}
+section{padding:52px 0;border-top:1px solid var(--line)}
+.label{color:var(--gold);font-size:12px;letter-spacing:2px}
+h2{font:700 28px Georgia,serif;margin:6px 0 20px}
+p.t{color:var(--muted);max-width:760px;margin-bottom:14px}
+.scroll{overflow-x:auto;margin:0 0 26px;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:520px;background:var(--panel);font-size:15px}
+caption{caption-side:top;text-align:left;padding:12px 16px;color:var(--gold);font-size:14px;border-bottom:1px solid var(--line)}
+th,td{padding:10px 14px;text-align:right;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+thead th{color:var(--muted);font-weight:500}
+tbody th{color:var(--muted);font-weight:500}
+tr:last-child td,tr:last-child th{border-bottom:0}
+td.base{background:rgba(214,180,106,.16);color:var(--gold);font-weight:700}
+ul.l{padding-left:20px;color:var(--muted);max-width:760px}ul.l li{margin-bottom:8px}ul.l b{color:var(--text)}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.button{display:inline-block;padding:11px 20px;border:1px solid var(--gold);color:var(--gold);border-radius:4px;font-weight:500}
+.button:hover{background:rgba(214,180,106,.12)}
+.button.primary{background:var(--gold);color:#101827}
+.note{color:var(--muted);font-size:13px;margin-top:18px;max-width:760px}
+footer{padding:28px 0;color:var(--muted);font-size:13px;text-align:center;border-top:1px solid var(--line)}
+@media(max-width:700px){.stats{grid-template-columns:1fr}}
+.shot{display:block;margin:6px 0 22px}.shot img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:8px}.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}@media(max-width:700px){.two{grid-template-columns:1fr}}h3{font:700 22px Georgia,serif;margin:0 0 10px}</style>
+</head>
+<body>
+<header><nav class="container">
+  <a class="logo" href="index.html">KER<span>OLOS</span>.</a>
+  <a class="back" href="index.html#projects">&larr; Back to portfolio</a>
+</nav></header>
+
+<main>
+<div class="container hero">
+  <p class="eyebrow">Projects · Data Visualization</p>
+  <h1>Power BI <span class="gold">Dashboards</span></h1>
+  <p class="intro">Interactive reporting projects built in Power BI. Each dashboard is a single page of KPI cards, trends and breakdowns with a slicer for filtering.</p>
+  <div class="tags"><span>Power BI</span><span>Data visualization</span><span>KPI reporting</span><span>Business intelligence</span></div>
+</div>
+<section><div class="container">
+  <p class="label">DASHBOARD 01</p><h2>Samsung Global Sales Performance</h2>
+  <p class="t">A one-page sales dashboard with KPI cards, a country map, sales against target over time, a sales funnel and channel mix. A country slicer filters the whole page.</p>
+  <a class="shot" href="samsung-dashboard.jpg" target="_blank" rel="noopener"><img src="samsung-dashboard.jpg" alt="Samsung Global Sales Performance Power BI dashboard" loading="lazy"></a>
+  <div class="two">
+    <div><h3>What it shows</h3><ul class="l"><li>KPI cards: total sales, units sold, average selling price and target achievement</li><li>Sales by country on a map, and the top five countries</li><li>Sales over time against target</li><li>Sales funnel from awareness to loyalty</li><li>Sales channel split and the top five products</li></ul></div>
+    <div><h3>Key figures on the dashboard</h3><ul class="l"><li>Total sales of $34bn from 84M units sold</li><li>Average selling price of $399</li><li>Target achievement of 58.94%</li><li>Online is the largest channel at 45.1% of sales</li><li>USA is the top country by sales</li></ul></div>
+  </div>
+  <div class="btns" style="margin-top:22px">
+    <a class="button primary" href="Samsung_Sales_Dashboard.pbix" download>Download .pbix</a>
+    <a class="button" href="samsung-dashboard.jpg" target="_blank" rel="noopener">Open full size</a>
+  </div>
+</div></section>
+<section><div class="container">
+  <p class="label">DASHBOARD 02</p><h2>Customer &amp; Revenue Insights (Vodafone)</h2>
+  <p class="t">A telecom dashboard covering customers, revenue, ARPU, churn, complaints, satisfaction, data usage and network coverage, with a month slicer.</p>
+  <a class="shot" href="vodafone-dashboard.jpg" target="_blank" rel="noopener"><img src="vodafone-dashboard.jpg" alt="Vodafone Customer and Revenue Insights Power BI dashboard" loading="lazy"></a>
+  <div class="two">
+    <div><h3>What it shows</h3><ul class="l"><li>KPI cards: total customers, total revenue, ARPU, new customers and churn rate, each compared with the previous month</li><li>Revenue trend (EGP) and revenue by product</li><li>Top complaints and customer satisfaction</li><li>Data usage trend in TB</li><li>4G network coverage gauge</li></ul></div>
+    <div><h3>Key figures on the dashboard</h3><ul class="l"><li>45.8M customers and 5.62bn revenue</li><li>ARPU of 122.50 and 1.2M new customers</li><li>Churn rate of 1.48%</li><li>Revenue grows from 4.1bn to 5.6bn EGP between January and May</li><li>Data is 60.2% of revenue and 87% of customers are satisfied</li><li>4G coverage of 92%</li></ul></div>
+  </div>
+  <div class="btns" style="margin-top:22px">
+    <a class="button primary" href="Vodafone_Customer_Revenue_Dashboard.pbix" download>Download .pbix</a>
+    <a class="button" href="vodafone-dashboard.jpg" target="_blank" rel="noopener">Open full size</a>
+  </div>
+</div></section>
+<section><div class="container">
+  <p class="label">NOTES</p><h2>How to open the files</h2>
+  <p class="t">The .pbix files open in Power BI Desktop, which is free from Microsoft. Figures shown come from the datasets built for these projects and are not official company results.</p>
+  <div class="btns"><a class="button" href="https://github.com/KerolosKaram-FA/powerbi-dashboards" target="_blank" rel="noopener">GitHub repository</a></div>
+</div></section>
+</main>
+
+<footer><div class="container">&copy; 2026 Kerolos Karam. All rights reserved.</div></footer>
+</body>
+</html>

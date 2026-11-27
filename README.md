@@ -1,37 +1,23 @@
+# Power BI Dashboards
 
-# Kerolos Karam
+Two single-page Power BI dashboards.
 
-### Finance | Financial Modeling & Valuation
+## 1. Samsung Global Sales Performance
+KPI cards (total sales, units sold, average selling price, target achievement), sales by country map, sales over time against target, sales funnel, sales channel split, top countries and top five products. A country slicer filters the page.
 
-Welcome to my professional profile.
+File: `Samsung_Sales_Dashboard.pbix` · Preview: `samsung-dashboard.jpg`
 
-I specialize in financial analysis, financial modeling, business valuation, financial planning & analysis (FP&A), investment research, and data analytics.
+## 2. Customer & Revenue Insights (Vodafone)
+KPI cards (customers, revenue, ARPU, new customers, churn), revenue trend (EGP), revenue by product, top complaints, customer satisfaction, data usage (TB) and 4G coverage. A month slicer filters the page.
 
-## Certifications
+File: `Vodafone_Customer_Revenue_Dashboard.pbix` · Preview: `vodafone-dashboard.jpg`
 
-- FMVA® – Financial Modeling & Valuation Analyst
-- FPAP® – Financial Planning & Analysis Professional (FPAP")
-- BIDA® – Business Intelligence & Data Analyst
+## Notes
+- Open the .pbix files with Power BI Desktop (free).
+- Figures come from the datasets built for these projects and are not official company results.
 
-## Core Areas
+## Tools
+Power BI · Data visualization · KPI reporting
 
-- Financial Modeling & Valuation
-- Financial Statement Analysis
-- Budgeting & Forecasting
-- Investment Research
-- Power BI & Data Analytics
-- Microsoft Excel
-
-## Featured Projects
-
-- Apple Inc. – DCF Valuation Model
-- The Coca-Cola Company – 3-Statement Financial Model
-- Power BI – Data Analytics Dashboards
-
-
-## Connect With Me
-
-- [LinkedIn](https://www.linkedin.com/in/kerolos-karam-fmva®-fpap®-2b52092a1)
-
----
-*Building the intersection of Finance and Data Analytics.*
+## Author
+Kerolos Karam · [LinkedIn](https://www.linkedin.com/in/kerolos-karam-fmva%C2%AE-fpap%C2%AE-2b52092a1/) · [Portfolio](https://kerolloskaram-fa.github.io/)
